@@ -18,8 +18,8 @@ body{
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   z-index: -1;
   background: radial-gradient(
     ellipse 40% 90% at -10% -30%,
@@ -288,22 +288,22 @@ ul{
   grid-auto-rows: minmax(100px, auto);
 }
 
-.proyecto-PLC{
+#proyecto1{
   grid-column: 1 / 3;
   grid-row: 1 / 4;
 }
 
-.proyecto-SmartChess{
+#proyecto2{
   grid-column: 3 / 6;
   grid-row: 1 / 3;
 }
 
-.proyecto-Biometria-IA{
+#proyecto3{
   grid-column: 1 / 4;
   grid-row: 4 / 6;
 }
 
-.proyecto-BrazoRobotico{
+#proyecto4{
   grid-column: 4 / 6;
   grid-row: 3 / 6;
 }
@@ -312,6 +312,10 @@ ul{
   grid-column: 3;
   grid-row: 3;
   margin-left: 15px;
+}
+
+.btn-proyectos{
+  display: none;
 }
 
 .title-proyecto-vertical{
@@ -546,6 +550,12 @@ ul{
   padding-left: 10px;
 }
 
+.container-download{
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+
 .download-cv-2{
   display: flex;
   justify-content: center;
@@ -555,8 +565,6 @@ ul{
   text-decoration: none;
   color: #fff;
   background-color: #f5f5f518;
-  margin-left: 140px;
-  margin-bottom: 15px;
   padding: 5px;
   border-radius: 15px;
   border: 1px solid;
@@ -571,7 +579,7 @@ ul{
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 5vw 0 2vw 0;
+  margin: 30vw 0 3vw 0;
   font-size: 15px;
 }
 
@@ -604,6 +612,10 @@ ul{
     margin-top: 15px;
   }
 
+  .nav-principal{
+    margin: 0 10px 0 0;
+  }
+
   .download-cv{
     display: none;
   }
@@ -624,13 +636,21 @@ ul{
   #cabecera{
     width: 100%;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
   }
 
   .presentacion{
     margin: 0;
     padding-right: 30px;
+    width: 84%;
+  }
+
+  .presentacion > h2{
+    font-size: 20px;
+  }
+
+  .presentacion > h3{
+    font-size: 12px;
   }
 
   h1{
@@ -686,7 +706,214 @@ ul{
   }
 
   .grid-Projects{
-    margin-left: 45px;
+    margin: 0;
+    max-width: 290px;
+    min-height: 980px;
+    max-height: 1560px;
+    grid-template-columns: repeat(1, 290px);
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+
+  .grid-item{
+    max-width: 290px;
+    min-height: 230px;
+    transition: max-height 1s ease;
+  }
+
+  .grid-item.expanded{
+    max-height: 550px;
+  }
+
+  #proyecto1{
+    grid-column: 1;
+    grid-row: 1;
+  }
+  
+  #proyecto2{
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  #proyecto3{
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  #proyecto4{
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .title-proyecto-vertical > h3{
+    font-size: 2vh;
+    margin: 5px 0 10px 0;
+  }
+
+  .title-proyecto-lateral > h3{
+    font-size: 2vh;
+    margin: 5px 0 10px;
+  }
+
+  .cuerpo-proyecto{
+    flex-direction: column;
+  }
+
+  .img-proyecto-lateral{
+    margin: 0 0 0 30px;
+    width: 220px;
+    height: 130px;
+  }
+
+  .img-PLC{
+    width: 180px;
+  }
+
+  .img-Biometria{
+    width: 220px;
+  }
+
+  .img-SmartChess{
+    width: 220px;
+  }
+
+  .img-BrazoRobotico{
+    width: 140px;
+  }
+
+  .container-btn-proyectos{
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn-proyectos{
+    display: block;
+    font-size: 10px;
+    padding: 5px 7px;
+    color: white;
+    background-color: #ffffff0e;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 0 3px white;
+  }
+
+  .btn-proyectos:hover{
+    scale: 1.05;
+    background-color: #ffffff1c;
+    border: 1px solid #c9d94e;
+    box-shadow: 0 0 4px #c9d94e;
+    cursor: pointer;
+  }
+
+  #btn-proyecto1{
+    margin-top: 13px;
+  }
+
+  #btn-proyecto2{
+    margin-top: 16px;
+  }
+
+  #btn-proyecto3{
+    margin-top: 16px;
+  }
+
+  #btn-proyecto4{
+    margin-top: 9px;
+  }
+
+  .descripcion-proyecto-vertical{
+    display: none;
+    font-size: 11px;
+    margin: 10px 20px;
+  }
+
+  .grid-item.expanded .descripcion-proyecto-vertical{
+    display: block;
+  }
+
+  .descripcion-proyecto-lateral{
+    display: none;
+    font-size: 11px;
+    margin: 10px 20px;
+    min-width: 250px;
+  }
+
+  .grid-item.expanded .descripcion-proyecto-lateral{
+    display: block;
+  }
+
+  .etiqueta-vertical{
+    display: none;
+  }
+
+  .habilidades-vertical{
+    justify-content: center;
+  }
+
+  .habilidades-vertical > li{
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .habilidades-vertical > li:first-child{
+    margin-right: 10px;
+  }
+
+  .tecnologias-vertical{
+    justify-content: center;
+    margin: 13px 0;
+  }
+
+  .tecnologias-vertical > li{
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .tecnologias-vertical > li:first-child{
+    margin-right: 10px;
+  }
+
+  .grid-item.expanded .etiqueta-vertical{
+    display: block;
+  }
+
+  .etiqueta-lateral{
+    display: none;
+  }
+
+  .habilidades-lateral{
+    justify-content: center;
+    margin: 0;
+  }
+
+  .habilidades-lateral > li{
+    font-size: 11px;
+    margin: 0;
+  }
+
+  .habilidades-lateral > li:first-child{
+    margin-right: 10px;
+  }
+
+  .tecnologias-lateral{
+    justify-content: center;
+    margin: 13px 0;
+  }
+
+  .tecnologias-lateral > li{
+    margin: 0;
+  }
+
+  .tecnologias-lateral > li:first-child{
+    margin-right: 10px;
+  }
+
+  .grid-item.expanded .etiqueta-lateral{
+    display: block;
   }
 
   .sobre-mi-text{
@@ -695,7 +922,7 @@ ul{
   }
 
   .sobre-mi-text > img{
-    margin-top: 20px;
+    scale: 0.8;
   }
 
   .contenedor-sobre-mi{

@@ -16,13 +16,12 @@
         <meta property="og:image" content="../images/SmartChess.webp">
         <meta property="og:image" content="../images/Biometria_IA.webp">
         <meta property="og:image" content="../images/BrazoRobotico.webp">
-        <meta property="og:url" content="http://127.0.0.1:3000/src/index.html">
 
         <meta name="theme-color" content="#050505">
 
         <link rel="icon" type="image/webp" href="../images/logoMecatronica.webp">
         <link rel="stylesheet" href="./index.css">
-        <script src="script.js"></script>
+        <script src="./script.js"></script>
 
     </head>
     <body>
@@ -35,7 +34,7 @@
                 <a class= "nav-principal" href="#sobre-mi">Sobre mi</a>
                 <a class= "nav-principal" href="#contact">Contacto</a>
                 <a class= "download-cv" href="../EmilioLemos_CV_ATS.pdf" download="EmilioLemos_CV_ATS.pdf">
-                    <span class="txt-descargar">Descargar</span>CV
+                    <span class="txt-descargar" style="margin-right: 5px;">Descargar</span>CV
                     <svg id="download-icon" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-download" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" />
@@ -47,7 +46,7 @@
         </header>
         <main id="main-doc">
             <section id="cabecera">
-                <div class="presentacion">
+                <article class="presentacion">
                     <h2 class="saludo">
                         Hola!
                     </h2>
@@ -136,7 +135,7 @@
                             <span id="LinkedIn-text">TikTok</span>
                         </a>
                     </nav>
-                </div>
+                </article>
                 <div class="imagen-Emilio">
                     <img 
                     title="Foto de Emilio"
@@ -222,7 +221,7 @@
                       </svg>
                     <h2 style="color: #a8f5ba;">Proyectos</h2>
                 </div>
-                <div id="container-grid">
+                <div id="container-grid" style="display: flex; justify-content: center;">
                     <div class="grid-Projects">
                         <article id="proyecto1" class="grid-item">
                             <header class="title-proyecto-vertical">
