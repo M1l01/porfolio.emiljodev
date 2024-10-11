@@ -229,25 +229,16 @@ h3{
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
   border: 2px solid white;
+  z-index: 1;
 }
 
 .timeline-line{
   position: absolute;
-  top: 27px;
+  top: -5px;
   left: -4px;
   background-color: rgba(255, 255, 255, 0.5);
-  width: 3px;
-  height: 120px;
-  border-radius: 2px;
-}
-
-.timeline-line-2{
-  position: absolute;
-  top: 27px;
-  left: -4px;
-  background-color: rgba(255, 255, 255, 0.5);
-  width: 3px;
-  height: 165px;
+  width: 2px;
+  height: 323%;
   border-radius: 2px;
 }
 
@@ -684,20 +675,16 @@ ul{
     margin: 40px 35px 40px 60px;
   }
 
-  .timeline-line{
-    height: 13vh;
-  }
-
-  .timeline-line-2{
-    height: 16.5vh;
-  }
-
   .separador{
     display: none;
   }
 
   .timeline-date{
     font-size: 11px;
+  }
+
+  .timeline-line{
+    height: 302%;
   }
 
   .timeline-title{
@@ -963,5 +950,17 @@ ul{
 
   .piedePagina > span{
     font-size: 15px;
+  }
+}
+
+@media (max-width: 430px){
+  .timeline-line{
+    height: 315%;
+  }
+}
+
+@media (max-width: 425px){
+  .timeline-line{
+    height: 330%;
   }
 }
