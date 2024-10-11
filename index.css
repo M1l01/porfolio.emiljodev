@@ -9,7 +9,7 @@ body{
   justify-content: center;
   align-items: center;
   margin: 0;
-  background-color: rgb(9, 11, 23);
+  background-color: rgb(7, 9, 18);
   color: white;
   min-height: 100%;
 }
@@ -24,7 +24,7 @@ body{
   background: radial-gradient(
     ellipse 40% 90% at -10% -30%,
     rgba(196, 190, 190, 0.575),
-    rgba(17, 22, 46, 0.306)
+    rgba(9, 12, 25, 0.306)
   );
   background-size: cover;
 }
@@ -172,6 +172,10 @@ h3{
   font-weight: bold;
   scale: 1.05;
   background: rgba(255,255,255,0.1);
+}
+
+.redes-text{
+  padding: 5px 8px 5px 0;
 }
 
 .icon{
@@ -564,7 +568,7 @@ ul{
   width: 140px;
   text-decoration: none;
   color: #fff;
-  background-color: #f5f5f518;
+  background-color: #f5f5f50a;
   padding: 5px;
   border-radius: 15px;
   border: 1px solid;
@@ -572,7 +576,8 @@ ul{
 
 .download-cv-2:hover{
   scale: 1.05;
-  background-color: #f5f5f528;
+  background-color: #f5f5f51c;
+  box-shadow: 0 0 3px white;
 }
 
 .piedePagina{
@@ -750,12 +755,12 @@ ul{
   }
 
   .title-proyecto-vertical > h3{
-    font-size: 2vh;
+    font-size: 15px;
     margin: 5px 0 10px 0;
   }
 
   .title-proyecto-lateral > h3{
-    font-size: 2vh;
+    font-size: 15px;
     margin: 5px 0 10px;
   }
 
