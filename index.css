@@ -238,7 +238,7 @@ h3{
   left: -4px;
   background-color: rgba(255, 255, 255, 0.5);
   width: 2px;
-  height: 323%;
+  height: 410%;
   border-radius: 2px;
 }
 
@@ -593,6 +593,10 @@ ul{
     width: 100%;
   }
 
+  .timeline-line{
+    height: 410%;
+  }
+
   .grid-Projects{
     margin-left: 15px;
   }
@@ -684,7 +688,7 @@ ul{
   }
 
   .timeline-line{
-    height: 302%;
+    height: 438%;
   }
 
   .timeline-title{
@@ -957,14 +961,8 @@ ul{
   }
 }
 
-@media (max-width: 430px){
-  .timeline-line{
-    height: 315%;
-  }
-}
-
 @media (max-width: 425px){
   .timeline-line{
-    height: 305%;
+    height: 448%;
   }
 }
