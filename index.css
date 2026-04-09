@@ -573,11 +573,20 @@ ul{
 
 .piedePagina{
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   margin: 20vw 0 3vw 0;
   font-size: 15px;
 }
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
 
 .piedePagina > span{
   font-size: 25px;
