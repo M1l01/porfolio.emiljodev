@@ -587,10 +587,58 @@ ul{
   color: #fff;
 }
 
-
 .piedePagina > span{
   font-size: 25px;
   margin-right: 8px;
+}
+
+.footer {
+    margin-top: 60px;
+    padding: 30px 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #a8f5ba;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+.legal-page {
+    max-width: 900px;
+    margin: 120px auto 60px auto;
+    padding: 0 20px;
+    color: white;
+    line-height: 1.8;
+}
+
+.legal-page h1 {
+    color: #a8f5ba;
+    margin-bottom: 10px;
+}
+
+.legal-page h2 {
+    margin-top: 30px;
+    color: #a8f5ba;
+}
+
+.volver {
+    display: inline-block;
+    margin-top: 40px;
+    color: #a8f5ba;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px){
