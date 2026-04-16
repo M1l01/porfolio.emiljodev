@@ -641,6 +641,21 @@ ul{
     text-decoration: none;
 }
 
+.btn-contacto{
+  display: inline-block;
+  background: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px 5px;
+}
+
+.btn-contacto:hover {
+  background: #43a047;
+}
+
 @media (max-width: 1024px){
   #main-doc{
     width: 100%;
